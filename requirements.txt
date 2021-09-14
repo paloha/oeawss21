@@ -1,6 +1,7 @@
-numpy
+-f https://download.pytorch.org/whl/torch_stable.html
 torch==1.9.0+cpu
 torchvision==0.10.0+cpu
+numpy
 matplotlib
 scipy
 sklearn

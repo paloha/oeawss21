@@ -8,7 +8,7 @@
 * Download the solution6.ipynb from Monday
 * Create requirements.txt
 * Install & create a virtualenv
-* Install dependencies from requirements.txt with flag ` -f https://download.pytorch.org/whl/torch_stable.html`
+* Install dependencies from requirements.txt
 * Run the jupyter notebook server
 * Run the cells 1-4 until you see the images
 * Create a readme.md file with just a name of the project
