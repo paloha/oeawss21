@@ -101,8 +101,7 @@ https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-
 * When the app runs, have fun...
   Try this image for example: https://m.media-amazon.com/images/I/81U64AnQvkL._AC_UL1500_.jpg
 
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/paloha/oeawss21/master?filepath=voila%2Frender%2Fwebapp.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/paloha/oeawss21/master?urlpath=%2Fvoila%2Frender%2Fwebapp.ipynb)
 
 ### Exercise 7 - Heroku [optional]
 
