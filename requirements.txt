@@ -6,3 +6,4 @@ scipy
 sklearn
 seaborn
 jupyter
+voila
