@@ -1,23 +1,20 @@
 # OEAW Summer School on AI 2021
 13.09 - 17.09. 2021 in Vienna, Austria, [official website here](https://www.oeaw.ac.at/isf/forschung/fachbereiche-teams/maschinelles-lernen-ml-team/summer-school-2021).
 
-----
-
 ## Tuesday lecture session
 
-**Date**: 14.09.2021, 09:00 - 17:30
-**Tutor**: Pavol Harar [(orcid)](https://orcid.org/0000-0001-5206-1794)
-**Assistent**: Leon Gerard [(orcid)](https://orcid.org/0000-0002-3314-396X)
-**Title**: A tool a day keeps the bad review away
-**Alt-title**: Planning, execution, and dissemination of a machine learning project
-**Slides**: [`presentation.pdf`](presentation.pdf)
-
-----
+**Date**: 14.09.2021, 09:00 - 17:30 \
+**Tutor**: Pavol Harar [(orcid)](https://orcid.org/0000-0001-5206-1794) \
+**Assistent**: Leon Gerard [(orcid)](https://orcid.org/0000-0002-3314-396X) \
+**Title**: A tool a day keeps the bad review away \
+**Alt-title**: Planning, execution, and dissemination of a machine learning project \
+**Slides**: [`presentation.pdf`](presentation.pdf) \
 
 ## Tuesday exercise session
 
 The main aim of the following exercises is to have a hands on experience with some of the tools presented during the lecture session. All the commands bellow are suited for Ubuntu operating system but links to relevant resources are provided for users of other operating systems.
 
+----
 
 ### Exercise 1 - Jupyter in Virtualenv
 
@@ -153,11 +150,6 @@ Here is an example badge to run this repo on Binder: [![Binder](https://mybinder
 ----
 
 ### Some useful links
-* How to use docker with GPU
-https://towardsdatascience.com/4c699c78c6d1
-
-* Example on how to better structure the project
-https://gitlab.com/paloha/repex-template
-
-* Free Heroku slug must be at most 500MB
-https://help.heroku.com/KUFMEES1/my-slug-size-is-too-large-how-can-i-make-it-smaller
+* [How to use docker with GPU](https://towardsdatascience.com/4c699c78c6d1)
+* [Example on how to better structure the project](https://gitlab.com/paloha/repex-template)
+* [Free Heroku slug must be at most 500MB](https://help.heroku.com/KUFMEES1/my-slug-size-is-too-large-how-can-i-make-it-smaller)
