@@ -94,12 +94,11 @@ By the end of the day, you should be able to:
 
 * Run `sudo docker build -t oeawss21:latest -f .dockerfile .`.
 * In case your Docker errors on "killed" Adjust Docker Preferences Resources RAM - make it bigger, i.e. 4 or 6GB in the settings of your Docker.
-* Run `sudo docker run --rm -v <path_on_host>/volume/data:/home/volume/data -p 8888:8888 oeawss21:latest jupyter notebook --allow-root --ip 0.0.0.0`
+* Run `sudo docker run --rm -v <path_on_host>/volume/data:/home/volume/data -p 8888:8888 oeawss21:latest jupyter notebook --allow-root --ip 0.0.0.0`.
   * `-p` forwards port 8888 of the container to 8888 on the host
   * `-v` mounts specified host folder to container's folder (paths must be absolute)
   * `--allow-root` since all in the container runs as root
   * `--ip 0.0.0.0` expose the jupyter server so host can see it
-
 * Visit `localhost:8888` in your browser and copy the token, the jupyter notebook should now run.
 
 ----
@@ -127,6 +126,7 @@ By the end of the day, you should be able to:
 ----
 
 ### Exercise 6 - Binder
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/paloha/oeawss21/master?urlpath=%2Fvoila%2Frender%2Fwebapp.ipynb)
 
 * Make your git repo public if it is not already.
 * Go to [mybinder.org](https://mybinder.org) and fill in the form:
@@ -138,7 +138,7 @@ By the end of the day, you should be able to:
 * Check how to use Docker with binder if needed [here](https://mybinder.readthedocs.io/en/latest/tutorials/dockerfile.html).
 * When the app runs, have fun... You can try this [image](https://m.media-amazon.com/images/I/81U64AnQvkL._AC_UL1500_.jpg) for example.
 
-Here is an example badge to run this repo on Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/paloha/oeawss21/master?urlpath=%2Fvoila%2Frender%2Fwebapp.ipynb)
+\*An example badge to run the webapp from this repository on Binder is bellow the title of this exercise. Try to click it.
 
 ----
 
