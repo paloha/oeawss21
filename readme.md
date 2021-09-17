@@ -8,11 +8,21 @@
 **Assistent**: Leon Gerard [(orcid)](https://orcid.org/0000-0002-3314-396X) \
 **Title**: A tool a day keeps the bad review away \
 **Alt-title**: Planning, execution, and dissemination of a machine learning project \
-**Slides**: [`presentation.pdf`](presentation.pdf) \
+**Slides**: [`presentation.pdf`](presentation.pdf)
 
 ## Tuesday exercise session
 
-The main aim of the following exercises is to have a hands on experience with some of the tools presented during the lecture session. All the commands bellow are suited for Ubuntu operating system but links to relevant resources are provided for users of other operating systems.
+The main aim of the following exercises is to have a hands on experience with some of the tools presented during the lecture session. The following material builds on the jupyter notebook from a previous session in which you have built and trained some neural networks using the FashionMNIST dataet. All the commands bellow are suited for Ubuntu operating system but links to relevant resources are provided for users of other operating systems. 
+
+By the end of the day, you should be able to:
+
+1. run a machine learning project within a virtual environment on your own computer 
+2. put your code into a git repository like this one
+3. specify, build, and run a Docker container which runs your project
+4. track your experiments in a nice and useful web interface
+5. wrap your project into an interactive web application for common users
+6. configure your project to run on Binder, e.g. for reviewers of your paper
+7. deploy the web application such that it is available from the Internet
 
 ----
 
@@ -23,7 +33,7 @@ The main aim of the following exercises is to have a hands on experience with so
 * Download the `Solution_Exercise_6.ipynb` from Monday session.
 * Create `requirements.txt`.
 * Install & create a virtualenv in `.venv` folder.
-* Install dependencies from `requirements.txt`. (The torch+cpu package is not available for Mac users, so in case you have a Mac, remove the first line of the `requirements.txt` where the `-f` flag is specified and adjust the lines of torch and torchvision to not mention cpu. The torch+cpu package should then later be used within the docker based on Ubuntu and also on Binder and Heroku. Torch which supports both cpu and gpu computation is quite large ~1GB and Heroku would complain about the size quota. You can alternatively keep two version of the file, e.g. 1. `requirements.txt` and 2. `requirements-mac.txt`)
+* Install dependencies from `requirements.txt`. (The torch+cpu package is not available for Mac users, so in case you have a Mac, remove the first line of the `requirements.txt` where the `-f` flag is specified and adjust the lines of torch and torchvision to not mention cpu. The torch+cpu package should then later be used within the Docker based on Ubuntu and also on Binder and Heroku. Torch which supports both cpu and gpu computation is quite large ~1GB and Heroku would complain about the size quota. You can alternatively keep two version of the file, e.g. 1. `requirements.txt` and 2. `requirements-mac.txt`)
 * Run the `jupyter notebook` server.
 * Run the cell 1 to see whether all imports work.
 * If you run cells 1-4 the FashionMNIST data will be downloaded into `volume > data` folder which is needed only when you want to train the network. In the following exercises we will only need the pretrained models from Monday.
@@ -67,7 +77,7 @@ The main aim of the following exercises is to have a hands on experience with so
 ### Exercise 3 - Docker
 #### Install Docker
 
-* If you use different OS than Ubuntu, check [docker installation guide](https://docs.docker.com/engine/install/).
+* If you use different OS than Ubuntu, check [Docker installation guide](https://docs.docker.com/engine/install/).
 * On Ubuntu install with `sudo apt install docker.io`
 * Check if it is installed correctly with `sudo docker run hello-world`
 
@@ -77,7 +87,7 @@ The main aim of the following exercises is to have a hands on experience with so
 * Add a file `.dockerfile` into your project. (Here we use a nonstandard name for a reason that we actually do not want Binder and Heroku to use our Dockerfile.)
 * Base your `.dockerfile` on `intelliseqngs/ubuntu-minimal-20.04:3.0.5`.
 * Fill the `.dockerfile` with commands to copy and install your project.
-* Reference on writing the docker file is [here](https://docs.docker.com/engine/reference/builder/).
+* Reference on writing the Dockerfile is [here](https://docs.docker.com/engine/reference/builder/).
 * In case you have problems, consult the solution in [.dockerfile](.dockerfile).
 
 #### Build the image
@@ -150,6 +160,6 @@ Here is an example badge to run this repo on Binder: [![Binder](https://mybinder
 ----
 
 ### Some useful links
-* [How to use docker with GPU](https://towardsdatascience.com/4c699c78c6d1)
+* [How to use Docker with GPU](https://towardsdatascience.com/4c699c78c6d1)
 * [Example on how to better structure the project](https://gitlab.com/paloha/repex-template)
 * [Free Heroku slug must be at most 500MB](https://help.heroku.com/KUFMEES1/my-slug-size-is-too-large-how-can-i-make-it-smaller)
